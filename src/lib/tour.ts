@@ -42,6 +42,7 @@ export type TourAnswers = {
   dates: string;
   adults: number;
   children: number;
+  babies: number;
   style: string;
   budget: string;
   name: string;
@@ -56,6 +57,7 @@ export const emptyTourAnswers: TourAnswers = {
   dates: "",
   adults: 2,
   children: 0,
+  babies: 0,
   style: "",
   budget: "",
   name: "",
@@ -97,6 +99,9 @@ export function buildTourBriefing(answers: TourAnswers) {
     `${answers.adults} ${answers.adults === 1 ? "adulto" : "adultos"}`,
     answers.children > 0
       ? `${answers.children} ${answers.children === 1 ? "criança" : "crianças"}`
+      : null,
+    answers.babies > 0
+      ? `${answers.babies} ${answers.babies === 1 ? "bebê (abaixo de 2 anos)" : "bebês (abaixo de 2 anos)"}`
       : null,
   ]
     .filter(Boolean)

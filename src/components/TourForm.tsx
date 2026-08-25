@@ -175,7 +175,7 @@ export function TourForm() {
             )}
 
             {step === 2 && (
-              <div className="grid gap-6 sm:grid-cols-2">
+              <div className="grid gap-6 sm:grid-cols-3">
                 <label className="block">
                   <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-rv-muted">
                     Adultos
@@ -201,6 +201,21 @@ export function TourForm() {
                     onChange={(event) => patch({ children: Number(event.target.value) || 0 })}
                     className="w-full border border-rv-mist bg-rv-cream px-4 py-3 text-sm outline-none ring-rv-sand focus:ring-1"
                   />
+                  <span className="mt-2 block text-xs text-rv-muted">A partir de 2 anos</span>
+                </label>
+                <label className="block">
+                  <span className="mb-2 block text-[11px] uppercase tracking-[0.18em] text-rv-muted">
+                    Bebês
+                  </span>
+                  <input
+                    type="number"
+                    min={0}
+                    max={6}
+                    value={answers.babies}
+                    onChange={(event) => patch({ babies: Number(event.target.value) || 0 })}
+                    className="w-full border border-rv-mist bg-rv-cream px-4 py-3 text-sm outline-none ring-rv-sand focus:ring-1"
+                  />
+                  <span className="mt-2 block text-xs text-rv-muted">Abaixo de 2 anos</span>
                 </label>
               </div>
             )}

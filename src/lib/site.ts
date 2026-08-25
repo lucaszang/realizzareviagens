@@ -12,6 +12,9 @@ export const siteConfig = {
   instagramHandle: "realizzareviagens",
   facebook: "https://www.facebook.com/realizzareviagens/",
   cadastur: true,
+  googleMapsQuery: "Realizzare Viagens Porto Alegre e Balneário Camboriú",
+  googleMapsSearchUrl:
+    "https://www.google.com/maps/search/?api=1&query=Realizzare%20Viagens%20Porto%20Alegre%20e%20Balne%C3%A1rio%20Cambori%C3%BA",
 };
 
 export const navLinks = [

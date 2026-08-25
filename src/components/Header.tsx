@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/Logo";
-import { navLinks, siteConfig } from "@/lib/site";
+import { navLinks } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -49,7 +49,7 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <a href={siteConfig.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn-primary !px-5 !py-2.5">
+          <a href="#monte-seu-tour" className="btn-primary !px-5 !py-2.5">
             Monte seu tour
           </a>
         </nav>
@@ -78,9 +78,7 @@ export function Header() {
               </a>
             ))}
             <a
-              href={siteConfig.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#monte-seu-tour"
               className="btn-primary mt-6"
               onClick={() => setOpen(false)}
             >

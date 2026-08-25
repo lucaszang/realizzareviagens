@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
 const HERO_IMAGE = "/images/hero.jpg";
@@ -31,18 +31,17 @@ export function Hero() {
           Da comodidade de casa até as nossas bases no Brasil e em Portugal.
         </p>
         <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <a href="#monte-seu-tour" className="btn-primary">
+            Monte seu tour
+          </a>
           <a
             href={siteConfig.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-outline"
           >
             <MessageCircle size={16} />
-            Fale no WhatsApp
-          </a>
-          <a href="#destinos" className="btn-outline">
-            Ver destinos
-            <ArrowRight size={16} />
+            WhatsApp
           </a>
         </div>
       </div>

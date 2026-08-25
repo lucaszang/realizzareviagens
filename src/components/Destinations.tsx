@@ -61,12 +61,7 @@ export function Destinations() {
             Conte o destino, o ritmo e o orçamento. Montamos um roteiro exclusivo com
             passagens, hospedagem, passeios e transfers.
           </p>
-          <a
-            href={siteConfig.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary mt-8"
-          >
+          <a href="#monte-seu-tour" className="btn-primary mt-8">
             Começar agora
           </a>
         </div>

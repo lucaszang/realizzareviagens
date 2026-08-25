@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-rv-cream text-rv-navy font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-rv-sand/40 text-rv-navy;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .section-container-wide {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .label-caps {
+    @apply text-[11px] font-medium uppercase tracking-[0.28em] text-rv-sand;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl font-medium leading-tight text-rv-navy sm:text-4xl md:text-5xl;
+  }
+
+  .section-title-light {
+    @apply font-serif text-3xl font-medium leading-tight text-white sm:text-4xl md:text-5xl;
+  }
+
+  .section-subtitle {
+    @apply mt-4 max-w-xl text-base leading-relaxed text-rv-muted sm:text-lg;
+  }
+
+  .gold-rule {
+    @apply h-px w-16 bg-rv-sand;
+  }
+
+  .gold-rule-long {
+    @apply h-px w-full max-w-xs bg-gradient-to-r from-rv-sand to-transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-rv-sand px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-rv-navy transition hover:bg-rv-sandLight;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-white/40 bg-transparent px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:border-rv-sand hover:text-rv-sandLight;
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center justify-center gap-2 border border-rv-navy bg-rv-navy px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-rv-ocean;
+  }
+}

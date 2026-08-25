@@ -146,7 +146,7 @@ export const stories = [
   },
   {
     title: "Disney Orlando",
-    location: "Parques temáticos"
+    location: "Parques temáticos",
     excerpt:
       "O complexo mais famoso fica em Orlando, mas há parques também na Califórnia, Europa, Tóquio, Xangai e Hong Kong. Montamos o roteiro certo para a sua família.",
     image: "/images/parques.jpg",
